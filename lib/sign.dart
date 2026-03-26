@@ -33,7 +33,7 @@ class _SignPageState extends State<SignPage> {
    if (email.isEmpty || password.isEmpty || confirm.isEmpty) {
      setState(() => message = 'Preencha e-mail, senha e confirmação.');
      return;
-}
+   }
    if (!_isValidEmail(email)) {
      setState(() => message = 'E-mail inválido.');
      return;
@@ -164,3 +164,4 @@ class _SignPageState extends State<SignPage> {
    );
  }
 }
+
